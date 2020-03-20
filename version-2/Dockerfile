@@ -16,7 +16,6 @@ RUN apk add --no-cache \
     'su-exec>=0.2' \
     tzdata && \
     addgroup -S app && adduser -S app -G app -u 1000 && \
-    ls -la /usr/src/app && \
     chmod +x /usr/local/bin/docker-entrypoint.sh && \
     chmod +x -R ./bin/ && \
     ./bin/setup && \
