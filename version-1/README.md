@@ -1,4 +1,4 @@
-### Book Manager - Version 1
+### Book Reminder - Version 1
 
 In this example, the project is maintained in a separate repository and is cloned during the build process.
 

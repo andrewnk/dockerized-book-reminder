@@ -1,4 +1,4 @@
-### Book Manager
+### Book Reminder
 
 To run the examples in this repo:
 

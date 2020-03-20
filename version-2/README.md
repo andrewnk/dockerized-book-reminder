@@ -1,4 +1,4 @@
-### Book Manager - Version 2
+### Book Reminder - Version 2
 
 In this example, the project and the docker information are located in the same repo. Organizing it this way gives us a better overview into the project and associated services as well as allowing us to have an easy to setup development environment within the repo.
 
@@ -28,7 +28,7 @@ To build and start a development environment, run:
 docker-compose -f docker-compose.yml -f docker-compose.dev.yml up -d --build
 ```
 
-Changes can then be made directly in the src/ dir and will be reflected within the docker container.
+Changes can then be made directly in the ```src``` dir and will be reflected within the docker container.
 
 
 To backup a database file you can run the following command (example is for the production db, i.e. production.sqlite3):
