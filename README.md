@@ -3,7 +3,7 @@
 To run the examples in this repo:
 
 ```
-git clone git@github.com:andrewnk/dockerized-book-reminder.git
+git clone https://github.com/andrewnk/dockerized-book-reminder.git
 cd dockerized-book-reminder
 ```
 
