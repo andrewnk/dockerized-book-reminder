@@ -1,0 +1,7 @@
+== README
+
+Simple application for demonstrating Rails and web concepts and technologies:
+
+* Bootstrap
+* Rspec
+* and others

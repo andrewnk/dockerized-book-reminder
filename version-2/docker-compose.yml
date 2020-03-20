@@ -1,0 +1,40 @@
+version: '3.7'
+
+services:
+  book-reminder-app:
+    build:
+      args:
+        RAILS_ENV: ${RAILS_ENV}
+        RUBY_VERSION: ${RUBY_VERSION}
+      context: .
+      dockerfile: Dockerfile
+    container_name: book-reminder-app
+    environment:
+      RAILS_ENV: ${RAILS_ENV}
+      # SECRET_KEY_BASE: ${SECRET_KEY_BASE}
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100M"
+        max-file: "50"
+        labels: "book-reminder-app"
+    networks:
+      - book-reminder-app
+    ports:
+      - "${PORT}:3000"
+    secrets:
+      - secret_key_base
+    restart: unless-stopped
+    volumes:
+      - book-reminder-db:/usr/src/app/db
+
+secrets:
+  secret_key_base:
+    file: ./secret_key_base
+
+networks:
+  book-reminder-app:
+    driver: bridge
+
+volumes:
+  book-reminder-db:

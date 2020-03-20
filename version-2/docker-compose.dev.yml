@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  book-reminder-app:
+    build:
+      args:
+        RAILS_ENV: development
+    environment:
+      RAILS_ENV: development
+    volumes:
+      - ${PWD}/src:/usr/src/app/
